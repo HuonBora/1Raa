@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://localhost/conv/conn.php -->
+<html lang="km"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>កម្មវិធីដូរប្រាក់រៀល-ដុល្លារ</title>
+    <style>
+        body {
+            font-family: 'Khmer OS', 'Khmer OS System', Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #1a5276;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select, button {
+            padding: 8px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #2e86c1;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #1a5276;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #eaf2f8;
+            border-radius: 5px;
+        }
+        .history {
+            margin-top: 30px;
+        }
+        .history-item {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .khmer-number {
+            font-size: 1.2em;
+            color: #1a5276;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>កម្មវិធីដូរប្រាក់រៀល-ដុល្លារ</h1>
+        
+        <form method="POST">
+            <div class="form-group">
+                <label for="amount">ចំនួនទឹកប្រាក់:</label>
+                <input type="number" id="amount" name="amount" step="0.01" min="0" required="">
+            </div>
+            
+            <div class="form-group">
+                <label for="currency">ប្តូរពី:</label>
+                <select id="currency" name="currency" required="">
+                    <option value="USD">ដុល្លារ (USD) → រៀល (KHR)</option>
+                    <option value="KHR">រៀល (KHR) → ដុល្លារ (USD)</option>
+                </select>
+            </div>
+            
+            <button type="submit">ដូរប្រាក់</button>
+        </form>
+        
+                <div class="result">
+            <h3>លទ្ធផល:</h3>
+            <p>400,000រៀល = $100</p>
+            
+            <h4>ជាភាសាខ្មែរ:</h4>
+            <p class="khmer-number">៤០០០០០ (បួនរយពាន់រៀល)</p>
+            <p>ស្មើនឹង: មួយរយដុល្លារ</p>
+            
+            <p>អត្រាប្តូរប្រាក់: 1 USD = 4,000 KHR</p>
+        </div>
+                
+        <div class="history">
+            <h3>ប្រវត្តិដូរប្រាក់ (៥ចុងក្រោយ):</h3>
+                                            <div class="history-item">
+                    <p>[2025-05-18 21:50:51] 
+                    400,000.00 KHR 
+                    → 
+                    100.00 USD                    (អត្រា: 4000)</p>
+                </div>
+                                <div class="history-item">
+                    <p>[2025-05-18 21:50:04] 
+                    10,000,000.00 KHR 
+                    → 
+                    2,500.00 USD                    (អត្រា: 4000)</p>
+                </div>
+                                <div class="history-item">
+                    <p>[2025-05-18 21:49:35] 
+                    1.00 USD 
+                    → 
+                    4,000.00 KHR                    (អត្រា: 4000)</p>
+                </div>
+                                <div class="history-item">
+                    <p>[2025-05-18 21:44:38] 
+                    0.00  
+                    → 
+                    0.00                     (អត្រា: 1 USD = 4000 KHR)</p>
+                </div>
+                                    </div>
+    </div>
+
+</body></html>
